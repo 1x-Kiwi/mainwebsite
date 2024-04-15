@@ -1,0 +1,92 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/**/
+
+li {
+    list-style: none;
+    color: white;
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+h1,
+h2,
+h4,
+p {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    color: white;
+}
+
+#githubImage {
+    display: flex;
+    justify-content: center;
+}
+
+ul#socialMedia,
+ul#languages {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul#languages li,
+ul#socialMedia li {
+    display: inline-block;
+    /* or inline-flex if you need to align items within the li */
+    margin: 5px;
+    /* rest of your styles */
+}
+
+nav {
+    text-align: center;
+}
+
+ul#languages li {
+    text-align: center;
+}
+
+body {
+    background-color: #323232;
+}
+
+
+
+/* Typewriter Effect */
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid #6563ff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 4.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #6563ff;
+    }
+}
